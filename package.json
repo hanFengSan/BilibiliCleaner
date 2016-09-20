@@ -1,0 +1,52 @@
+{
+    "name": "bilibili-cleaner",
+    "version": "1.0.0",
+    "description": "",
+    "main": "jquery.min.js",
+    "scripts": {
+        "start": "webpack-dev-server --progress",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack": "^1.13.2",
+        "autoprefixer": "^6.4.1",
+        "babel-core": "^6.14.0",
+        "babel-loader": "^6.2.5",
+        "babel-plugin-react-transform": "^2.0.2",
+        "babel-plugin-transform-runtime": "^6.1.2",
+        "babel-preset-es2015": "^6.14.0",
+        "babel-preset-react": "^6.11.1",
+        "babel-preset-stage-0": "^6.1.2",
+        "babel-runtime": "^5.8.0",
+        "bootstrap": "^3.3.7",
+        "css-loader": "^0.24.0",
+        "expose-loader": "^0.7.1",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "favicons-webpack-plugin": "0.0.7",
+        "file-loader": "^0.9.0",
+        "html-webpack-plugin": "^2.22.0",
+        "image-loader": "0.0.1",
+        "image-webpack-loader": "^2.0.0",
+        "jquery": "^1.10.2",
+        "json-loader": "^0.5.4",
+        "node-sass": "^3.9.3",
+        "postcss-loader": "^0.11.1",
+        "react-transform-hmr": "^1.0.4",
+        "sass-loader": "^4.0.1",
+        "style-loader": "^0.13.1",
+        "url-loader": "^0.5.7",
+        "vue": "^1.0.26",
+        "vue-html-loader": "^1.0.0",
+        "vue-loader": "^7.3.0",
+        "vue-strap": "^1.1.14",
+        "vuestrap-base-components": "^0.8.10",
+        "vuex": "^1.0.0-rc.2",
+        "webpack-dev-server": "^1.15.1"
+    },
+    "dependencies": {
+        "vue": "^1.0.26",
+        "vuex": "^1.0.0-rc.2"
+    }
+}
