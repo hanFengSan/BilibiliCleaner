@@ -18,6 +18,7 @@ chrome.storage.onChanged.addListener(function(changes, namespace) {
 })
 
 const clean = function() {
+    console.log('clean')
     blockList.forEach(function(item) {
         // /清潔一般項
         $("[data-up='{0}']".format(item)).remove()
@@ -42,9 +43,10 @@ const DOMModificationHandler = function() {
         // 判断document是否有变化
         if (html != document.documentElement.innerHTML) {
             clean()
+            html = document.documentElement.innerHTML
         }
         $(document).bind('DOMSubtreeModified', DOMModificationHandler)
-    }, 0)
+    }, 250)
 }
 
 // Checking page title
