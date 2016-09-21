@@ -13,6 +13,7 @@ chrome扩展，主要功能：屏蔽up主，屏蔽评论。屏蔽列表自动同
 **以上UP主名单仅是测试，毫无恶性:)**
 
 ## 用户使用说明
+[chrome webstore下载地址](https://chrome.google.com/webstore/detail/bilibili-%E6%B8%85%E6%B4%81%E8%80%85/ihadnfkejmlnpohmlccdmgeikafohamb/related)
 直接在输入框中输入用户名称然后点击添加或回车即可，屏蔽列表会自动同步到云端，不用担心丢失。添加是立即见效的，而删除需要重新刷新页面。
 
 ## 使用
