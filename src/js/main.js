@@ -19,11 +19,11 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 
 const clean = function () {
   console.log('clean')
-  //音乐区推荐列表
+  // 音乐区推荐列表
   let hasRecommand = ($('.top-list').length != 0)
-  //评论列表
+  // 评论列表
   let hasCommList = ($('.comm_list').length != 0)
-  let has
+  
   blockList.forEach(function (item) {
     // /清潔一般項
     $("[data-up='{0}']".format(item)).remove()
@@ -35,17 +35,21 @@ const clean = function () {
     // 清洁推荐
     if (hasRecommand) {
       for (let recommandItem of $('.v-item')) {
-        if (recommandItem.innerHTML.indexOf(item) != -1)
-          recommandItem.remove()
+        if (recommandItem.innerHTML.indexOf(item) != -1) {
+          let node = recommandItem.parentNode
+          node.parentNode.removeChild(node)
+        }
       }
-    } 
+    }
 
     // 清洁评论
     if (hasCommList) {
       for (let commItem of $('.t')) {
         console.log(commItem.innerHTML)
-        if (commItem.innerHTML == item)
-          commItem.remove()
+        if (commItem.innerHTML.indexOf('card="{0}"'.format(item)) != -1) {
+          let node = commItem.parentNode
+          node.parentNode.removeChild(node)
+        }
       }
     }
   })
