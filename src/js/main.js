@@ -18,7 +18,7 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 })
 
 const clean = function () {
-  console.log('clean')
+//   console.log('clean')
   // 音乐区推荐列表
   let hasRecommand = ($('.top-list').length != 0)
   // 评论列表
