@@ -20,7 +20,8 @@
     ],
     "content_scripts": [{
         "matches": [
-            "http://www.bilibili.com/*"
+            "http://www.bilibili.com/*",
+            "http://bangumi.bilibili.com/*"
         ],
         "js": [
             "./src/js/utils.js",
